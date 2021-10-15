@@ -6,6 +6,12 @@ namespace Backend_task_1_Patrick
     {
         static void Main(string[] args)
         {
+            bool closeFlag = true;
+
+            while(closeFlag)
+            {
+
+            }
             SayHello();
         }
         static void SayHello()

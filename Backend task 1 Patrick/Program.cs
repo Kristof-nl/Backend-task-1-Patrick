@@ -12,7 +12,7 @@ namespace Backend_task_1_Patrick
         {
             Console.Write("Enter your name: ");
             string userName = Console.ReadLine();
-            Console.WriteLine("Welcome " + userName);
+            Console.WriteLine("Welcome " + userName + "!!!");
         }
     }
 }

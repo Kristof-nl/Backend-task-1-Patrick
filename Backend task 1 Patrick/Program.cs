@@ -46,21 +46,25 @@ namespace Backend_task_1_Patrick
             {
                 string userName;
                 int age;
+                bool userAgeFlag = false;
 
-                try
-                {
-                    Console.Write("Enter your name: ");
-                    userName = Console.ReadLine();
-                    Console.Write("Enter your age: ");
-                    age = Convert.ToInt32(Console.ReadLine());
+                while (!userAgeFlag)
 
-                    Console.WriteLine("Welcome " + userName + " you are " + age + " years old.");
+                    try
+                    {
+                        Console.Write("Enter your name: ");
+                        userName = Console.ReadLine();
+                        Console.Write("Enter your age: ");
+                        age = Convert.ToInt32(Console.ReadLine());
 
-                }
-                catch
-                {
-                    Console.WriteLine("Bad input. Please write your age as a number.");
-                }
+                        Console.WriteLine("Welcome " + userName + " you are " + age + " years old.");
+                        userAgeFlag = true;
+
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Bad input. Please write your age as a number.");
+                    }
             }
 
             static void CheckerboardPattern()
@@ -96,8 +100,8 @@ namespace Backend_task_1_Patrick
                                 }
                             }
                            Console.WriteLine();
-                           flagPattern = true;
                         }
+                        flagPattern = true;
                     }
                     catch
                     {

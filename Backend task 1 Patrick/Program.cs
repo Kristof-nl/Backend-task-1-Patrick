@@ -76,9 +76,9 @@ namespace Backend_task_1_Patrick
                     Console.WriteLine("Make your own pattern");
                     try
                     {
-                        Console.Write("How many colums want you make: ");
+                        Console.Write("How many colums do you want to make: ");
                         column = Convert.ToInt32(Console.ReadLine());
-                        Console.Write("How many rows want you make: ");
+                        Console.Write("How many rows do you want to make: ");
                         row = Convert.ToInt32(Console.ReadLine());
 
                         
@@ -95,8 +95,8 @@ namespace Backend_task_1_Patrick
                                     Console.Write("O");
                                 }
                             }
-                            Console.WriteLine();
-                            flagPattern = true;
+                           Console.WriteLine();
+                           flagPattern = true;
                         }
                     }
                     catch
